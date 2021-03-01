@@ -1,3 +1,7 @@
+<?php
+  @include 'db.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +13,15 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <header>
+    <div class="container">
+      <img src="img/logo.png" alt="spotify logo">
+    </div>
+  </header>
+  <main>
+    <div class="cds-container container">
+      <div class="cd"></div>
+    </div>
+  </main>
 </body>
 </html>

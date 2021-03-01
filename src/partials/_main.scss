@@ -1,0 +1,9 @@
+main{
+  @include container;
+  .container.cd-container{
+    @include main-layout;
+    .cd{
+      @include cd-layout;
+    }
+  }
+}

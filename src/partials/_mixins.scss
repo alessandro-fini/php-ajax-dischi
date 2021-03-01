@@ -1,0 +1,33 @@
+@mixin container {
+  .container{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+@mixin cd-layout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 200px;
+  padding: 20px;
+  margin: 10px 20px;
+  height: 360px;
+  background: $main-color;
+  text-align: center;
+}
