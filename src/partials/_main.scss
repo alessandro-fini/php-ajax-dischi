@@ -4,6 +4,9 @@ main{
     @include main-layout;
     .cd{
       @include cd-layout;
+      img{
+        max-width: 100%;
+      }
     }
   }
 }

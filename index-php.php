@@ -20,7 +20,14 @@
   </header>
   <main>
     <div class="cds-container container">
-      <div class="cd"></div>
+      <div class="cd">
+        <?php foreach ($cds as $cd) { ?>
+          <img src="<?php echo $cd['poster'] ?>" alt="<?php echo $cd['title'] ?>">
+          <h3><?php echo $cd['title'] ?></h3>
+          <span><?php echo $cd['author'] ?></span>
+          <span><?php echo $cd['year'] ?></span>
+        <?php } ?>
+      </div>
     </div>
   </main>
 </body>
