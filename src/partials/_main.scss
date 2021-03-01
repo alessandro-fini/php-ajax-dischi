@@ -1,11 +1,25 @@
 main{
   @include container;
-  .container.cd-container{
-    @include main-layout;
-    .cd{
-      @include cd-layout;
-      img{
-        max-width: 100%;
+  .container{
+    .cds-container{
+      @include main-layout;
+      .cd{
+        @include cd-layout;
+        img{
+          max-width: 100%;
+        }
+        h3{
+          margin: 20px 0;
+          color: white;
+          font-size: 22px;
+          text-transform: uppercase;
+        }
+        span:first-of-type{
+          font-size: 20px;
+        }
+        span{
+          color: gray;
+        }
       }
     }
   }

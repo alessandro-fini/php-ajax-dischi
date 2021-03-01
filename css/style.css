@@ -16,7 +16,7 @@ header {
   background-color: #2e3a46;
 }
 header .container {
-  width: 90%;
+  width: 1070px;
   height: 100%;
   margin: 0 auto;
 }
@@ -25,22 +25,22 @@ header .container {
   align-items: center;
 }
 header .container img {
-  height: 80%;
+  height: 60%;
 }
 
 main .container {
-  width: 90%;
+  width: 1070px;
   height: 100%;
   margin: 0 auto;
 }
-main .container.cd-container {
+main .container .cds-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 100px 0;
 }
-main .container.cd-container .cd {
+main .container .cds-container .cd {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -52,6 +52,18 @@ main .container.cd-container .cd {
   background: #2e3a46;
   text-align: center;
 }
-main .container.cd-container .cd img {
+main .container .cds-container .cd img {
   max-width: 100%;
+}
+main .container .cds-container .cd h3 {
+  margin: 20px 0;
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+main .container .cds-container .cd span:first-of-type {
+  font-size: 20px;
+}
+main .container .cds-container .cd span {
+  color: gray;
 }
