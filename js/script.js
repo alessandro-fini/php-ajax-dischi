@@ -10,16 +10,42 @@
 var app = new Vue({
   el: '#app',
   data: {
-    cds: []
+    cds: [],
+    genres: ['All'],
+    selectedGenre: 'All'
   },
   created: function created() {
     var _this = this;
 
     axios.get('server.php').then(function (response) {
       _this.cds = response.data;
+
+      _this.cds.forEach(function (element) {
+        element.visible = true;
+      });
+
+      _this.getGenre();
     })["catch"](function (error) {
       return console.log(error);
     });
+  },
+  methods: {
+    getGenre: function getGenre() {
+      var _this2 = this;
+
+      this.cds.forEach(function (element) {
+        if (!_this2.genres.includes(element.genre)) {
+          _this2.genres.push(element.genre);
+        }
+      });
+    },
+    filterGenre: function filterGenre() {
+      var _this3 = this;
+
+      this.cds.forEach(function (element) {
+        _this3.selectedGenre == 'All' ? element.visible = true : element.genre == _this3.selectedGenre ? element.visible = true : element.visible = false;
+      });
+    }
   }
 });
 

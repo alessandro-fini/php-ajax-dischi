@@ -27,6 +27,13 @@ header .container {
 header .container img {
   height: 60%;
 }
+header .container select {
+  width: 10%;
+  height: 30%;
+  padding: 0 10px;
+  margin-left: 30px;
+  text-align: center;
+}
 
 main .container {
   width: 1070px;
